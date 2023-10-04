@@ -4,12 +4,15 @@
   "description": "first app in the course",
   "main": "index.js",
   "scripts": {
-    "start": "node server"
+    "start:dev": "nodemon server.js",
+    "start:prod": "NODE_ENV=production nodemon server.js"
   },
   "author": "sergio martinez",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.3.1",
     "express": "^4.18.2",
+    "mongoose": "^7.5.3",
     "morgan": "^1.10.0"
   }
 }

@@ -8,6 +8,7 @@ const {
   updateUser,
 } = require('../controllers/userController');
 
+
 userRouter.route('/').get(getAllUsers).post(addUser);
 userRouter.route('/:id').get(getUser).delete(deleteUser).patch(updateUser);
 
